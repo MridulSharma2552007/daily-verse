@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #0a0505;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1700px, calc(100% - 2rem));
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  color: red;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.icon-btn {
+  color: aliceblue;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.icon-btn .material-symbols-outlined {
+  font-size: 32px;
+}
+.icon-btn:hover {
+  transform: scale(1.1);
+  color: red;
+}
+/* hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  z-index: 1;
+  font-size: 40px;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-btn {
+  padding: 14px 34px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  background: rgba(255, 255, 255, 0.03);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+/* news */
+#news {
+  margin-top: 100px;
+}
+.news-wrapper {
+  margin-left: 100px;
+}
+.news-wrapper h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px 0;
+}
+
+.news-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.news-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff7a3d;
+  text-decoration: none;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}

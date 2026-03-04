@@ -22,7 +22,7 @@ async function loadNews() {
         <img src="${article.urlToImage || "https://via.placeholder.com/400"}" />
         <h3>${article.title}</h3>
         <p>${article.description || "No description available."}</p>
-        <a href="${article.url}" target="_blank">Read More ..</a>
+        <a href="${article.url}" target="_blank">Read More ...</a>
       </div>
     `,
       )

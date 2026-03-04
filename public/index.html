@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediaForge</title>
+    <title>DailyVerse</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
@@ -13,13 +13,15 @@
     <!-- navbar -->
     <nav class="navbar-wrapper">
         <div class="navbar glass">
+
             <div class="logo">
-                <span class="brand">Daily</span>Verse
+                <a href="#">
+                    <span class="brand">Daily</span>Verse
             </div>
 
             <div class="nav-links">
-                <a href="#">Manifesto</a>
-                <a href="#">Archive</a>
+                <a href="#movies">Movies</a>
+                <a href="#news">Top Headlines</a>
                 <a href="#">Lab</a>
             </div>
 
@@ -63,7 +65,7 @@
         <div id="news-container"></div>
 
     </section>
-    <!-- tmdb -->
+    <!-- omdb -->
     <section id="movies">
         <div class="movie-wrapper">
             <h1>Top<br>Movies</h1>
@@ -73,8 +75,18 @@
         </div>
     </section>
 
+    <!-- AI Section -->
+    <section id="ai">
+        <div class="ai-wrapper">
+            <h1>AI Tech<br>Facts</h1>
+            <hr>
+            <div id="ai-container"></div>
+        </div>
+    </section>
+
     <script src="js/news.js"></script>
     <script src="js/movies.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
